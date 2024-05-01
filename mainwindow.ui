@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1352</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>25</width>
+    <height>25</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>新建</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButton_19">
+               <property name="text">
+                <string>删除</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>查找</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="pushButton_8">
+               <property name="text">
+                <string>编辑</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>下一个</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>上一个</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>字体</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>字号</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QSpinBox" name="spinBox_2"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButton_20">
+               <property name="text">
+                <string>加粗</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButton_21">
+               <property name="text">
+                <string>斜体</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_22">
+               <property name="text">
+                <string>划线</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_23">
+               <property name="text">
+                <string>插图</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="pushButton_24">
+               <property name="text">
+                <string>插表</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="pushButton_25">
+               <property name="text">
+                <string>{  }</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QPushButton" name="pushButton_27">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>目录</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_28">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>标题</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnLearnMode">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>学习模式</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_6">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QPushButton" name="pushButton_9">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>摘录</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 style=&quot; margin-top:0px; margin-bottom:41px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;第-2-章-语言可用性的强化&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:xx-large; font-weight:600; color:#2c3e50; background-color:#ffffff;&quot;&gt;第&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:xx-large; font-weight:600; color:#2c3e50; background-color:#ffffff;&quot;&gt; 2 章 语言可用性的强化&lt;/span&gt;&lt;/h1&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;当我们声明、定义一个变量或者常量，对代码进行流程控制、面向对象的功能、模板编程等这些都是运行时之前，可能发生在编写代码或编译器编译代码时的行为。为此，我们通常谈及&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; font-weight:600; color:#2c3e50;&quot;&gt;语言可用性&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;，是指那些发生在运行时之前的语言行为。&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:45px; margin-bottom:27px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;2-1-常量&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://changkun.de/modern-cpp/zh-cn/02-usability/#2-1-%E5%B8%B8%E9%87%8F&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:x-large; font-weight:600; text-decoration: underline; color:#2c3e50;&quot;&gt;2&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:x-large; font-weight:600; color:#2c3e50;&quot;&gt;.1 常量&lt;/span&gt;&lt;/h2&gt;
+&lt;h3 style=&quot; margin-top:52px; margin-bottom:23px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;nullptr&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://changkun.de/modern-cpp/zh-cn/02-usability/#nullptr&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:large; font-weight:600; text-decoration: underline; color:#2c3e50;&quot;&gt;n&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:large; font-weight:600; color:#2c3e50;&quot;&gt;ullptr&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;nullptr&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 出现的目的是为了替代 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;。在某种意义上来说，传统 C++ 会把 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;、&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 视为同一种东西，这取决于编译器如何定义 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;，有些编译器会将 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 定义为 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;((void*)0)&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;，有些则会直接将其定义为 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;C++&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; font-weight:600; color:#2c3e50;&quot;&gt;不允许&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;直接将 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;void *&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 隐式转换到其他类型。但如果编译器尝试把 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 定义为 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;((void*)0)&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;，那么在下面这句代码中：&lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f8f8f8&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;&quot;&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; *ch = &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;没有了&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;void *&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 隐式转换的 C++ 只好将 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 定义为 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;。而这依然会产生新的问题，将 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 定义成 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 将导致 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;C++&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 中重载特性发生混乱。考虑下面这两个 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 函数：&lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f8f8f8&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;&quot;&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;*);&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;);&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;那么&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;foo(NULL);&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 这个语句将会去调用 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;foo(int)&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;，从而导致代码违反直觉。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;为了解决这个问题，C++11 引入了&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;nullptr&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 关键字，专门用来区分空指针、&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;。而 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;nullptr&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 的类型为 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;nullptr_t&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;，能够隐式的转换为任何指针或成员指针的类型，也能和他们进行相等或者不等的比较。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;你可以尝试使用&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;clang++&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 编译下面的代码：&lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f8f8f8&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;&quot;&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;#include &amp;lt;iostream&amp;gt;&lt;br /&gt;#include &amp;lt;type_traits&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; *);&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;);&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;main&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;() {&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; (std::is_same&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;decltype&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;), &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;decltype&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;)&amp;gt;::value)&lt;br /&gt;        std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;NULL == 0&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; std::endl;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; (std::is_same&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;decltype&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;), &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;decltype&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;((&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;*)&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;)&amp;gt;::value)&lt;br /&gt;        std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;NULL == (void *)0&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; std::endl;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; (std::is_same&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;decltype&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;), std::&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;nullptr_t&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;&amp;gt;::value)&lt;br /&gt;        std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;NULL == nullptr&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; std::endl;&lt;br /&gt;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;);          &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#b3b3b3;&quot;&gt;// 调用 foo(int)&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#b3b3b3;&quot;&gt;// foo(NULL);    // 该行不能通过编译&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;nullptr&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;);    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#b3b3b3;&quot;&gt;// 调用 foo(char*)&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;;&lt;br /&gt;}&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; *) {&lt;br /&gt;    std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;foo(char*) is called&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; std::endl;&lt;br /&gt;}&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;foo&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; i) {&lt;br /&gt;    std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;foo(int) is called&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; std::endl;&lt;br /&gt;}&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;将输出：&lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f8f8f8&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;&quot;&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;foo(int) is called&lt;br /&gt;foo(char*) is called&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;从输出中我们可以看出，&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;NULL&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 不同于 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 与 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;nullptr&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;。所以，请养成直接使用 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;nullptr&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;的习惯。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;此外，在上面的代码中，我们使用了&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;decltype&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 和 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::is_same&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 这两个属于现代 C++ 的语法，简单来说，&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;decltype&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 用于类型推导，而 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::is_same&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 用于比较两个类型是否相同，我们会在后面 &lt;/span&gt;&lt;a href=&quot;https://changkun.de/modern-cpp/zh-cn/02-usability/#decltype&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; font-weight:600; text-decoration: underline; color:#7e2d36;&quot;&gt;decltype&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 一节中详细讨论。&lt;/span&gt;&lt;/p&gt;
+&lt;h3 style=&quot; margin-top:52px; margin-bottom:23px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;constexpr&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://changkun.de/modern-cpp/zh-cn/02-usability/#constexpr&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:large; font-weight:600; text-decoration: underline; color:#2c3e50;&quot;&gt;c&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:large; font-weight:600; color:#2c3e50;&quot;&gt;onstexpr&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;C++ 本身已经具备了常量表达式的概念，比如&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;1+2&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;3*4&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 这种表达式总是会产生相同的结果并且没有任何副作用。如果编译器能够在编译时就把这些表达式直接优化并植入到程序运行时，将能增加程序的性能。一个非常明显的例子就是在数组的定义阶段：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1352</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>笔记</string>
+    </property>
+    <addaction name="action_Ctrl_N"/>
+    <addaction name="action_8"/>
+    <addaction name="actSetting"/>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actBold"/>
+    <addaction name="actItalic"/>
+    <addaction name="actUnderline"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>窗口</string>
+    </property>
+    <addaction name="action_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_7"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>220</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <column>
+        <property name="text">
+         <string>名称</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>类型</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>笔记1</string>
+        </property>
+        <property name="text">
+         <string>笔记</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>笔记4</string>
+        </property>
+        <property name="text">
+         <string>文件夹</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>笔记5</string>
+         </property>
+         <property name="text">
+          <string>笔记</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>笔记2</string>
+        </property>
+        <property name="text">
+         <string>文件夹</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>笔记6</string>
+         </property>
+         <property name="text">
+          <string>笔记</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>笔记3</string>
+        </property>
+        <property name="text">
+         <string>笔记</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actBold"/>
+   <addaction name="actItalic"/>
+   <addaction name="actUnderline"/>
+   <addaction name="separator"/>
+   <addaction name="actH1"/>
+   <addaction name="actH2"/>
+   <addaction name="actH3"/>
+   <addaction name="actH4"/>
+   <addaction name="actH5"/>
+   <addaction name="actH6"/>
+   <addaction name="separator"/>
+   <addaction name="actAlignL"/>
+   <addaction name="actAlignC"/>
+   <addaction name="actAlignR"/>
+   <addaction name="actAddList"/>
+   <addaction name="actRandomList"/>
+   <addaction name="actAddImg"/>
+   <addaction name="actOutput"/>
+   <addaction name="actInput"/>
+  </widget>
+  <action name="action_Ctrl_N">
+   <property name="text">
+    <string>新建笔记(Ctrl+N)</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actSetting">
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="actBold">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/bold.png</normaloff>:/img/res/icon/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>加粗</string>
+   </property>
+  </action>
+  <action name="actItalic">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/italic.png</normaloff>:/img/res/icon/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>斜体</string>
+   </property>
+  </action>
+  <action name="actUnderline">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/underLine.png</normaloff>:/img/res/icon/underLine.png</iconset>
+   </property>
+   <property name="text">
+    <string>下划线</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>布局</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>打开文件夹</string>
+   </property>
+  </action>
+  <action name="actH1">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/h1.png</normaloff>:/img/res/icon/h1.png</iconset>
+   </property>
+   <property name="text">
+    <string>标题1</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actH2">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/h2.png</normaloff>:/img/res/icon/h2.png</iconset>
+   </property>
+   <property name="text">
+    <string>标题2</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actAlignL">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/alignLeft.png</normaloff>:/img/res/icon/alignLeft.png</iconset>
+   </property>
+   <property name="text">
+    <string>左对齐</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actAlignR">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/alignRight.png</normaloff>:/img/res/icon/alignRight.png</iconset>
+   </property>
+   <property name="text">
+    <string>右对齐</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actAlignC">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/alignCenter.png</normaloff>:/img/res/icon/alignCenter.png</iconset>
+   </property>
+   <property name="text">
+    <string>居中对齐</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actAddList">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/list.png</normaloff>:/img/res/icon/list.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加列表</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actRandomList">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/randomList.png</normaloff>:/img/res/icon/randomList.png</iconset>
+   </property>
+   <property name="text">
+    <string>无序列表</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actH3">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/h3.png</normaloff>:/img/res/icon/h3.png</iconset>
+   </property>
+   <property name="text">
+    <string>标题3</string>
+   </property>
+   <property name="toolTip">
+    <string>标题3</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actH4">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/h4.png</normaloff>:/img/res/icon/h4.png</iconset>
+   </property>
+   <property name="text">
+    <string>标题4</string>
+   </property>
+   <property name="toolTip">
+    <string>标题4</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actH5">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/h5.png</normaloff>:/img/res/icon/h5.png</iconset>
+   </property>
+   <property name="text">
+    <string>标题5</string>
+   </property>
+   <property name="toolTip">
+    <string>标题5</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actH6">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/h6.png</normaloff>:/img/res/icon/h6.png</iconset>
+   </property>
+   <property name="text">
+    <string>正文</string>
+   </property>
+   <property name="toolTip">
+    <string>标题6</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actAddImg">
+   <property name="text">
+    <string>插入图片</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actOutput">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actInput">
+   <property name="text">
+    <string>读取</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

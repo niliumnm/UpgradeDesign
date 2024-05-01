@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LearnWindow</class>
+ <widget class="QMainWindow" name="LearnWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1171</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QStackedWidget" name="mainStackedWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="anser">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QTextEdit" name="questTextEdit">
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot; style=&quot; margin-top:24px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18px;&quot;&gt;为什么要引入 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::array&lt;/span&gt;&lt;span style=&quot; font-size:18px;&quot;&gt; 而不是直接使用 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::vector&lt;/span&gt;&lt;span style=&quot; font-size:18px;&quot;&gt;？&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="ansTextEdit">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff; word-spacing:0.890625px;&quot;&gt;与 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; color:#e96900; background-color:#f8f8f8; word-spacing:0.890625px;&quot;&gt;std::vector&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff; word-spacing:0.890625px;&quot;&gt; 不同，&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; color:#e96900; background-color:#f8f8f8; word-spacing:0.890625px;&quot;&gt;std::array&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff; word-spacing:0.890625px;&quot;&gt; 对象的大小是固定的，如果容器大小是固定的，那么可以优先考虑使用 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; color:#e96900; background-color:#f8f8f8; word-spacing:0.890625px;&quot;&gt;std::array&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff; word-spacing:0.890625px;&quot;&gt; 容器。 另外由于 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; color:#e96900; background-color:#f8f8f8; word-spacing:0.890625px;&quot;&gt;std::vector&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff; word-spacing:0.890625px;&quot;&gt; 是自动扩容的，当存入大量的数据后，并且对容器进行了删除操作， 容器并不会自动归还被删除元素相应的内存，这时候就需要手动运行 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; color:#e96900; background-color:#f8f8f8; word-spacing:0.890625px;&quot;&gt;shrink_to_fit()&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff; word-spacing:0.890625px;&quot;&gt; 释放这部分内存。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="article">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QTextEdit" name="article_2">
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h2 style=&quot; margin-top:45px; margin-bottom:27px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;4-2-无序容器&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://changkun.de/modern-cpp/zh-cn/04-containers/#4-2-%E6%97%A0%E5%BA%8F%E5%AE%B9%E5%99%A8&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:x-large; font-weight:600; text-decoration: underline; color:#2c3e50;&quot;&gt;4&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:x-large; font-weight:600; color:#2c3e50;&quot;&gt;.2 无序容器&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;我们已经熟知了传统 C++ 中的有序容器&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::map&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;/&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::set&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;，这些元素内部通过红黑树进行实现， 插入和搜索的平均复杂度均为 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;O(log(size))&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;。在插入元素时候，会根据 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 操作符比较元素大小并判断元素是否相同， 并选择合适的位置插入到容器中。当对这个容器中的元素进行遍历时，输出结果会按照 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 操作符的顺序来逐个遍历。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;而无序容器中的元素是不进行排序的，内部通过 Hash 表实现，插入和搜索元素的平均复杂度为&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;O(constant)&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;， 在不关心容器内部元素顺序时，能够获得显著的性能提升。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;C++11 引入了的两组无序容器分别是：&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::unordered_map&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;/&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::unordered_multimap&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 和 &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::unordered_set&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;/&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::unordered_multiset&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;它们的用法和原有的&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::map&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;/&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::multimap&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;/&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::set&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;/&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;set::multiset&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt; 基本类似， 由于这些容器我们已经很熟悉了，便不一一举例，我们直接来比较一下&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::map&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;和&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900; background-color:#f8f8f8;&quot;&gt;std::unordered_map&lt;/span&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e;&quot;&gt;：&lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f8f8f8&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;&quot;&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;#include &amp;lt;iostream&amp;gt;&lt;br /&gt;#include &amp;lt;string&amp;gt;&lt;br /&gt;#include &amp;lt;unordered_map&amp;gt;&lt;br /&gt;#include &amp;lt;map&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#0092db;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;main&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;() {&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#b3b3b3;&quot;&gt;// 两组结构按同样的顺序初始化&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;&lt;br /&gt;    std::unordered_map&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;, std::string&amp;gt; u = {&lt;br /&gt;        {&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;},&lt;br /&gt;        {&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;3&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;},&lt;br /&gt;        {&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;2&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;}&lt;br /&gt;    };&lt;br /&gt;    std::map&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;, std::string&amp;gt; v = {&lt;br /&gt;        {&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;},&lt;br /&gt;        {&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;3&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;},&lt;br /&gt;        {&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#ae81ff;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;2&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;}&lt;br /&gt;    };&lt;br /&gt;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#b3b3b3;&quot;&gt;// 分别对两组结构进行遍历&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;&lt;br /&gt;    std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;std::unordered_map&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; std::endl;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;( &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;auto&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;amp; n : u)&lt;br /&gt;        std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;Key:[&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; n.first &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;] Value:[&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; n.second &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;]\n&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;;&lt;br /&gt;&lt;br /&gt;    std::cout &amp;lt;&amp;lt; std::endl;&lt;br /&gt;    std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;std::map&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; std::endl;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;( &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#e96900;&quot;&gt;auto&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;amp; n : v)&lt;br /&gt;        std::cout &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;Key:[&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; n.first &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;] Value:[&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt; &amp;lt;&amp;lt; n.second &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#7e2d36;&quot;&gt;&amp;quot;]\n&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;;&lt;br /&gt;}&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:-24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Source Sans Pro','Helvetica Neue','Arial','sans-serif'; font-size:18px; color:#34495e; background-color:#ffffff;&quot;&gt;最终的输出结果为：&lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f8f8f8&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;&quot;&gt;&lt;span style=&quot; font-family:'Roboto Mono','Monaco','courier','monospace'; font-size:18px; color:#525252;&quot;&gt;std::unordered_map&lt;br /&gt;Key:[2] Value:[2]&lt;br /&gt;Key:[3] Value:[3]&lt;br /&gt;Key:[1] Value:[1]&lt;br /&gt;&lt;br /&gt;std::map&lt;br /&gt;Key:[1] Value:[1]&lt;br /&gt;Key:[2] Value:[2]&lt;br /&gt;Key:[3] Value:[3]&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_1">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="text">
+             <string>学习</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_11">
+            <property name="text">
+             <string>新增</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="text">
+             <string>显示答案</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="text">
+             <string>新增</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="text">
+             <string>取消</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_3" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>掌握</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>记得</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="text">
+             <string>猜对</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="text">
+             <string>猜错</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="text">
+             <string>忘记</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="text">
+             <string>取消</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1171</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actTree"/>
+   <addaction name="actFind"/>
+   <addaction name="separator"/>
+   <addaction name="actLast"/>
+   <addaction name="actNext"/>
+   <addaction name="separator"/>
+   <addaction name="actHistory"/>
+   <addaction name="actList"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <property name="maximumSize">
+        <size>
+         <width>240</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <attribute name="headerVisible">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>摘录实例</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>新建子项目</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>问答示例</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>新建子项目</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>新建子项目</string>
+          </property>
+         </item>
+        </item>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actTree">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>目录</string>
+   </property>
+   <property name="toolTip">
+    <string>打开目录</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actFind">
+   <property name="text">
+    <string>查找</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actLast">
+   <property name="text">
+    <string>←</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actNext">
+   <property name="text">
+    <string>→</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actHistory">
+   <property name="text">
+    <string>历史</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actList">
+   <property name="text">
+    <string>队列</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

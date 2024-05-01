@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>res/icon/fontHeader.png</file>
+        <file>res/icon/bold.png</file>
+        <file>res/icon/underLine.png</file>
+        <file>res/icon/italic.png</file>
+        <file>res/icon/font.png</file>
+        <file>res/icon/list.png</file>
+        <file>res/icon/alignRight.png</file>
+        <file>res/icon/alignLeft.png</file>
+        <file>res/icon/alignCenter.png</file>
+        <file>res/icon/randomList.png</file>
+        <file>res/icon/h6.png</file>
+        <file>res/icon/h5.png</file>
+        <file>res/icon/h4.png</file>
+        <file>res/icon/h3.png</file>
+        <file>res/icon/h2.png</file>
+        <file>res/icon/h1.png</file>
+    </qresource>
+</RCC>
