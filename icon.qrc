@@ -16,5 +16,8 @@
         <file>res/icon/h3.png</file>
         <file>res/icon/h2.png</file>
         <file>res/icon/h1.png</file>
+        <file>res/icon/iamge.png</file>
+        <file>res/icon/learn.png</file>
+        <file>res/icon/table.png</file>
     </qresource>
 </RCC>

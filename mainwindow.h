@@ -67,9 +67,12 @@ private slots:
 
     void do_changeComboFont();
 
+    void on_actTable_triggered();
+
 private:
     Ui::MainWindow *ui;
     QLabel*labelStatus;
     QFontComboBox *fontComboBox;
+    bool dontChangeFont=false;
 };
 #endif // MAINWINDOW_H

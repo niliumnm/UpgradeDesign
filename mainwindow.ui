@@ -22,6 +22,80 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>220</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <column>
+       <property name="text">
+        <string>名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>类型</string>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>笔记1</string>
+       </property>
+       <property name="text">
+        <string>笔记</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>笔记4</string>
+       </property>
+       <property name="text">
+        <string>文件夹</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>笔记5</string>
+        </property>
+        <property name="text">
+         <string>笔记</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>笔记2</string>
+       </property>
+       <property name="text">
+        <string>文件夹</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>笔记6</string>
+        </property>
+        <property name="text">
+         <string>笔记</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>笔记3</string>
+       </property>
+       <property name="text">
+        <string>笔记</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
      <widget class="QWidget" name="widget" native="true">
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <property name="leftMargin">
@@ -36,282 +110,6 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item>
-        <widget class="QFrame" name="frame">
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="rightMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
-          <item>
-           <widget class="QGroupBox" name="groupBox">
-            <property name="title">
-             <string/>
-            </property>
-            <layout class="QGridLayout" name="gridLayout">
-             <item row="0" column="0">
-              <widget class="QPushButton" name="pushButton">
-               <property name="text">
-                <string>新建</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QPushButton" name="pushButton_19">
-               <property name="text">
-                <string>删除</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QPushButton" name="pushButton_2">
-               <property name="text">
-                <string>查找</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QPushButton" name="pushButton_8">
-               <property name="text">
-                <string>编辑</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QGroupBox" name="groupBox_2">
-            <property name="title">
-             <string/>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_3">
-             <item>
-              <widget class="QPushButton" name="pushButton_7">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>60</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="text">
-                <string>下一个</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="pushButton_3">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>60</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="text">
-                <string>上一个</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QGroupBox" name="groupBox_3">
-            <property name="title">
-             <string/>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_4">
-             <item row="0" column="0">
-              <widget class="QLabel" name="label">
-               <property name="text">
-                <string>字体</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QComboBox" name="comboBox"/>
-             </item>
-             <item row="1" column="0">
-              <widget class="QLabel" name="label_2">
-               <property name="text">
-                <string>字号</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QSpinBox" name="spinBox_2"/>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QGroupBox" name="groupBox_4">
-            <property name="title">
-             <string/>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_2">
-             <item row="0" column="0">
-              <widget class="QPushButton" name="pushButton_20">
-               <property name="text">
-                <string>加粗</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QPushButton" name="pushButton_21">
-               <property name="text">
-                <string>斜体</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="2">
-              <widget class="QPushButton" name="pushButton_22">
-               <property name="text">
-                <string>划线</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QPushButton" name="pushButton_23">
-               <property name="text">
-                <string>插图</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QPushButton" name="pushButton_24">
-               <property name="text">
-                <string>插表</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="2">
-              <widget class="QPushButton" name="pushButton_25">
-               <property name="text">
-                <string>{  }</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QGroupBox" name="groupBox_5">
-            <property name="title">
-             <string/>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_2">
-             <item>
-              <widget class="QPushButton" name="pushButton_27">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>50</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="text">
-                <string>目录</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="pushButton_28">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>50</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="text">
-                <string>标题</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="btnLearnMode">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="text">
-                <string>学习模式</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QGroupBox" name="groupBox_6">
-            <property name="title">
-             <string/>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
-             <item>
-              <widget class="QPushButton" name="pushButton_9">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>60</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="text">
-                <string>摘录</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
        <item>
         <widget class="QTextEdit" name="textEdit">
          <property name="html">
@@ -404,90 +202,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <addaction name="menu_3"/>
    <addaction name="menu_4"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <widget class="QDockWidget" name="dockWidget">
-   <attribute name="dockWidgetArea">
-    <number>1</number>
-   </attribute>
-   <widget class="QWidget" name="dockWidgetContents">
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QTreeWidget" name="treeWidget">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>220</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <column>
-        <property name="text">
-         <string>名称</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>类型</string>
-        </property>
-       </column>
-       <item>
-        <property name="text">
-         <string>笔记1</string>
-        </property>
-        <property name="text">
-         <string>笔记</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>笔记4</string>
-        </property>
-        <property name="text">
-         <string>文件夹</string>
-        </property>
-        <item>
-         <property name="text">
-          <string>笔记5</string>
-         </property>
-         <property name="text">
-          <string>笔记</string>
-         </property>
-        </item>
-       </item>
-       <item>
-        <property name="text">
-         <string>笔记2</string>
-        </property>
-        <property name="text">
-         <string>文件夹</string>
-        </property>
-        <item>
-         <property name="text">
-          <string>笔记6</string>
-         </property>
-         <property name="text">
-          <string>笔记</string>
-         </property>
-        </item>
-       </item>
-       <item>
-        <property name="text">
-         <string>笔记3</string>
-        </property>
-        <property name="text">
-         <string>笔记</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-  </widget>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
@@ -515,12 +229,39 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <addaction name="actAlignL"/>
    <addaction name="actAlignC"/>
    <addaction name="actAlignR"/>
+   <addaction name="separator"/>
    <addaction name="actAddList"/>
    <addaction name="actRandomList"/>
+   <addaction name="separator"/>
    <addaction name="actAddImg"/>
+   <addaction name="actTable"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actLearn"/>
+   <addaction name="separator"/>
+   <addaction name="actNewNote"/>
    <addaction name="actOutput"/>
    <addaction name="actInput"/>
+   <addaction name="actMenu"/>
+   <addaction name="separator"/>
+   <addaction name="actLast"/>
+   <addaction name="actNext"/>
+   <addaction name="separator"/>
+   <addaction name="actClip"/>
+   <addaction name="actCloze"/>
+   <addaction name="separator"/>
+   <addaction name="actFind"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="action_Ctrl_N">
    <property name="text">
     <string>新建笔记(Ctrl+N)</string>
@@ -723,6 +464,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
    </property>
   </action>
   <action name="actAddImg">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/iamge.png</normaloff>:/img/res/icon/iamge.png</iconset>
+   </property>
    <property name="text">
     <string>插入图片</string>
    </property>
@@ -741,6 +486,89 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <action name="actInput">
    <property name="text">
     <string>读取</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actLast">
+   <property name="text">
+    <string>上一个</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actNext">
+   <property name="text">
+    <string>下一个</string>
+   </property>
+   <property name="toolTip">
+    <string>下一个</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actClip">
+   <property name="text">
+    <string>剪辑</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actCloze">
+   <property name="text">
+    <string>挖空</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actMenu">
+   <property name="text">
+    <string>目录</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actLearn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/learn.png</normaloff>:/img/res/icon/learn.png</iconset>
+   </property>
+   <property name="text">
+    <string>学习模式</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actTable">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/img/res/icon/table.png</normaloff>:/img/res/icon/table.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入表格</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actNewNote">
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actFind">
+   <property name="text">
+    <string>查找</string>
    </property>
    <property name="menuRole">
     <enum>QAction::NoRole</enum>

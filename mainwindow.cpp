@@ -12,6 +12,7 @@
 #include<QUrl>
 #include<QImageReader>
 #include<QFontComboBox>
+#include<QSpinBox>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -19,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     labelStatus=new QLabel(this);
     labelStatus->setText("就绪");
-    ui->statusbar->addWidget(labelStatus);
+    ui->statusBar->addWidget(labelStatus);
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("./mydatabase.db");
 
@@ -40,14 +41,50 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
+    ui->toolBar_3->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    ui->toolBar_3->setMaximumHeight(25);
 
+
+
+    /*
+     * 添加字体选择框和字号选择
+    */
+    // 创建水平布局
+    QSpinBox*spinbox;
+    spinbox=new QSpinBox(this);
+    spinbox->setRange(1,100);
+
+    QHBoxLayout* innerHlayout = new QHBoxLayout;
+    QVBoxLayout*outerVlayout=new QVBoxLayout;
+
+
+    // 创建字体选择框
     fontComboBox = new QFontComboBox(this);
-    fontComboBox->setMaximumWidth(130);
-    ui->toolBar->addWidget(fontComboBox);
+    fontComboBox->setMaximumWidth(100);
+
+    // 将字体选择框添加到水平布局
+    QLabel*fontSizeLab=new QLabel("字号");
+    innerHlayout->addWidget(fontSizeLab);
+    innerHlayout->addWidget(spinbox);
+    outerVlayout->addLayout(innerHlayout);
+    outerVlayout->addWidget(fontComboBox);
+
+
+    // 创建一个 QWidget 对象，将水平布局放置在其中
+    QWidget* fontspinWidget = new QWidget(this);
+    fontspinWidget->setLayout(outerVlayout);
+
+    // 将 QWidget 对象添加到工具栏
+    ui->toolBar->addSeparator();
+    ui->toolBar->addWidget(fontspinWidget);
+
+
     // 当字体选择框的字体发生变化时，将当前选中文字的字体设置为选择框的当前字体
     connect(fontComboBox,&QFontComboBox::currentFontChanged, this, &MainWindow::on_FontComboChanged);
     //bug 有问题 自动改字体
-    //connect(ui->textEdit,&QTextEdit::cursorPositionChanged,this,&MainWindow::do_changeComboFont);
+    connect(ui->textEdit,&QTextEdit::cursorPositionChanged,this,&MainWindow::do_changeComboFont);
+
+
 
     // 设置图标大小
     QIcon icon = ui->actRandomList->icon();
@@ -271,17 +308,47 @@ void MainWindow::on_actH5_triggered()
 
 void MainWindow::on_actH6_triggered()
 {
-    actH(6);
+    /*
+     * 问题：当选中多个段落的时候只会把第一个设为h1
+     * 光标没有回退
+     *
+    */
+    // 获取当前光标
+    QTextCursor cursor = ui->textEdit->textCursor();
+    // 获取标题文本
+    QString titleText =  cursor.block().text();
+    // 获取光标所在段落的起始位置和结束位置
+    int startPos = cursor.block().position();
+    int endPos = startPos + cursor.block().length();
+
+    cursor.setPosition(startPos);
+
+    // 选中段落的文本
+    cursor.movePosition(QTextCursor::NextCharacter, QTextCursor::KeepAnchor, endPos - startPos);
+
+    // 删除选中的文本
+    cursor.removeSelectedText();
+
+
+    // 构建带有 <h1> 标签的文本
+    QString htmlText = "<p>"+ titleText + "</p><br>";
+
+
+    // 在光标位置插入标题文本（带有 HTML 标签）
+    cursor.insertHtml(htmlText);
 }
 
 
 void MainWindow::on_actAddImg_triggered()
 {
     QString file = QFileDialog::getOpenFileName(this, tr("Select an image"),
-                                                ".", tr("Bitmap Files (*.bmp)\n"
+                                                ".", tr(
                                                    "JPEG (*.jpg *jpeg)\n"
+                                                   "Bitmap Files (*.bmp)\n"
+                                                   "PNG (*.png)\n"
                                                    "GIF (*.gif)\n"
-                                                   "PNG (*.png)\n"));
+                                                   "GIF (*.*)\n"
+                                                   ));
     // 构建包含图片的 HTML
     QString html = "<img src=\"" + file + "\">";
     QTextCursor cursor = ui->textEdit->textCursor();
@@ -349,17 +416,24 @@ void MainWindow::on_actInput_triggered()
 
 void MainWindow::on_FontComboChanged(const QFont &f)
 {
+    if(dontChangeFont==false){
+        // 获取当前 QTextEdit 的文本光标
+        QTextCursor cursor = ui->textEdit->textCursor();
+        QTextCharFormat fmt;
+        fmt.setFont(f);
+        cursor.mergeCharFormat(fmt);
+    }else {
+        dontChangeFont=false;
+    }
 
-    // 获取当前 QTextEdit 的文本光标
-    QTextCursor cursor = ui->textEdit->textCursor();
-    QTextCharFormat fmt;
-    fmt.setFont(f);
-    cursor.mergeCharFormat(fmt);
+
 
 }
 
 void MainWindow::do_changeComboFont()
 {
+    //解决改变combBox又触发改变字体的情况
+    dontChangeFont=true;
     // 获取当前 QTextEdit 的文本光标
     QTextCursor cursor = ui->textEdit->textCursor();
 
@@ -369,6 +443,18 @@ void MainWindow::do_changeComboFont()
     // 获取字体
     QFont font = format.font();
 
+
     fontComboBox->setCurrentFont(font);
+}
+
+
+void MainWindow::on_actTable_triggered()
+{
+    QTextTableFormat tableFormat;
+    tableFormat.setBorderCollapse(true);
+    tableFormat.setCellSpacing(0);
+    tableFormat.setBorderStyle(QTextFrameFormat::BorderStyle_Solid);
+    //tableFormat.setWidth(QTextLength(QTextLength::PercentageLength, 100));
+    auto *table = ui->textEdit->textCursor().insertTable(2, 1, tableFormat);
 }
 
