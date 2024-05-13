@@ -5,6 +5,15 @@
 #include<QLabel>
 #include<QTextCharFormat>
 #include<QFontComboBox>
+#include<QStandardItem>
+#include<QTreeWidgetItem>
+#include<QStandardItemModel>
+#include"Sql/idgenerator.h"
+#include<QStack>
+#include"sql/sqlUtil.h"
+#include<QSettings>
+#include<learnwindow.h>
+#include<sm2/datautil.h>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -21,7 +30,15 @@ public:
     bool boldcheck();
     bool italiccheck();
     bool underlinecheck();
+    void saveTreeViewToJson(QStandardItem* item, QJsonObject& jsonObject);
+    void saveSubTreeToJson(QTreeWidgetItem* item, QJsonObject& jsonObject);
+    void test();
+    static QSettings *getSettings();
+    void setSettings(QSettings *newSettings);
+    void initTreeMenu();
+    void setDebugOutput(const QString &targetFilePath, const bool &argDateFlag = false);
     ~MainWindow();
+
 
 private slots:
 
@@ -69,10 +86,60 @@ private slots:
 
     void on_actTable_triggered();
 
+    void on_actLast_triggered();
+
+    void on_actNext_triggered();
+
+    void restoreTreeViewFromJson(const QJsonObject& jsonObject, QStandardItem* parentItem);
+
+
+    void on_actClip_triggered();
+
+    void on_actFind_triggered();
+
+    void restoreTree();
+
+    void saveTree();
+
+    void setTreeTestData();
+
+    void do_treeSelectChanged(const QModelIndex &current, const QModelIndex &previous);
+
+    void do_saveNote();
+
+    void derorateText(QString &s);
+
+
+    void on_actNewNote_triggered();
+
+    void on_actDel_triggered();
+
+    void on_actLearn_triggered();
+
+    void handleSelectionChanged(const QItemSelection &selected, const QItemSelection &deselected);
+
+    void OnRightClicked(const QPoint& point);
+
+
+
 private:
     Ui::MainWindow *ui;
     QLabel*labelStatus;
     QFontComboBox *fontComboBox;
     bool dontChangeFont=false;
+    QStandardItemModel* m_standardItemModel=nullptr;
+    IdGenerator *generator;
+    QItemSelectionModel* selectionModel;
+    QModelIndex  lastTreeNode;
+    QModelIndex  nextTreeNode;
+    SqlUtil*sqlUtil;
+    LearnWindow*learnWindow=nullptr;
+    static QSettings*settings;
+    DataUtil*dataUtil;
+    QMenu*treeMenu=nullptr;
+
+signals:
+    void transferTreeModel(QStandardItemModel*model);
+
 };
 #endif // MAINWINDOW_H
