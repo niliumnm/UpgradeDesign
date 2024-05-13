@@ -124,9 +124,11 @@ void LearnWindow::printQueue(QVector<TopicBase*>*sortedQueue)
 }
 
 LearnWindow::~LearnWindow() {
-    if(正在学习){
-        把取出来current的元素放回去
-    }
+    learning=false;
+    delete sqlUtil;
+    delete dataUtil;
+    delete m_model;
+    delete m_learnQueue;
 
     delete ui;
 }
